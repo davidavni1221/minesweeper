@@ -1,0 +1,18 @@
+table {
+	border: 1px solid;
+	text-align: center;
+	
+}
+td {
+	width: 100px;
+	height: 100px;
+
+	background-color: lightgray;
+
+	border: 1px solid;
+
+	font-size: 30px;
+}
+td:hover {
+	background-color: lightcoral;
+}
