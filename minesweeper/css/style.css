@@ -1,0 +1,36 @@
+body
+{
+background-color: aqua;
+}
+
+
+.buttons,.newGame,.info{
+	
+    display: flex;
+    justify-content: center;
+	
+}
+
+table {
+	margin-top: 150px;
+	border: 1px solid ;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #C0C0C0;
+	
+}
+td {
+	width: 20px;
+	height: 20px;
+	border: 1px solid;
+	border-top-color: #ffffff;
+    border-right-color: #7B7B7B;
+    border-bottom-color: #7B7B7B;
+    border-left-color: #ffffff;
+	background-color: lightgray;
+	font-size: 15px;
+}
+td:hover {
+	background-color: lightcoral;
+}
