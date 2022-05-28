@@ -37,7 +37,7 @@ function initGame() {
 
 
     buildBoard()
-    console.log(gBoard)
+    
     setMinesRandom(gBoard, gLevel.MINES)
     setMinesNegsCount(gBoard)
     renderBoard(gBoard, '.board')
@@ -325,7 +325,7 @@ function cellMarked(elCell, i, j) {
 
 function checkGameOver() {
     if (!gGame.isOn) {
-        console.log('you lose')
+        
         gStartTime = 0
         clearInterval(gInterval)
         gInterval = 0;
@@ -335,7 +335,7 @@ function checkGameOver() {
 
     if (gLevel.SIZE === 4) {
         if (gGame.shownCount === 14 && gGame.markedCount === gLevel.MINES) {
-            console.log('you win')
+            
             gStartTime = 0
             clearInterval(gInterval)
             gInterval = 0;
@@ -346,7 +346,7 @@ function checkGameOver() {
     }
     else if (gLevel.SIZE === 8) {
         if (gGame.shownCount === 52 && gGame.markedCount === gLevel.MINES) {
-            console.log('you win')
+            
             gStartTime = 0
             clearInterval(gInterval)
             gInterval = 0;
@@ -357,7 +357,7 @@ function checkGameOver() {
     }
     else if (gLevel.SIZE === 12) {
         if (gGame.shownCount === 114 && gGame.markedCount === gLevel.MINES) {
-            console.log('you win')
+            
             gStartTime = 0
             clearInterval(gInterval)
             gInterval = 0;
